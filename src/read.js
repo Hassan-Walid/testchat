@@ -11,6 +11,8 @@ const Read = () => {
     useEffect(() => {
       setData([]);
 
+
+
     const unsubscribe = onChildAdded(dbRef, (snapshot) => {
         setData((prevMessages) =>{
             console.log("prev",prevMessages);
